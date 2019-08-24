@@ -1,0 +1,17 @@
+---
+---
+
+@import "{{ site.theme }}";
+
+#main_content_wrap {
+    background: #F68A22;
+    border-top: none;
+}
+
+*{
+	font-family: 'Sarabun', sans-serif !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	color: white;
+}
