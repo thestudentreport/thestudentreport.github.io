@@ -2,4 +2,4 @@
 title: bruh moment
 layout: default
 ---
-# bruh
+# Coming soon...
