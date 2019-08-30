@@ -14,7 +14,13 @@
     <!-- MAIN CONTENT -->
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        {{ content }}
+        <ul>
+        {% for post in site.posts %}
+          <li>
+            <p><a href="{{ post.url }}">{{ post.title }}</a></p>
+          </li>
+        {% endfor %}
+      </ul>
       </section>
     </div>
 
