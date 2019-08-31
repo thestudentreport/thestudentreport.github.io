@@ -1,0 +1,55 @@
+---
+---
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+  <head>
+    <meta charset='utf-8'>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">	
+    <style>
+      ul{
+        display: block;
+        text-align: center;
+      }
+      li{
+        display: inline-block;
+        text-align: center;
+      }
+      p{
+        margin: 0;
+      }
+      img{
+        margin: 0;
+        padding: 0;
+      }
+      a:hover{
+        text-decoration: none !important;
+      }
+    </style>
+  </head>
+
+  <body>
+    
+    {% include navbar.html %}
+    
+    <div id="main_content_wrap" class="outer">
+      <section id="main_content" class="inner">
+        <ul>
+        {% for post in site.tags.podcast %}
+          <li>
+            <a href="{{ post.url }}">
+              <img height="150px" width="auto" src="{{post.thumbnail}}">
+              <p>Episode {{ post.epno }}</p>
+              <p style="font-weight: bold;">{{ post.guestname }}</p>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      </section>
+    </div>
+
+    {% include footer.html %}
+
+  </body>
+</html>
