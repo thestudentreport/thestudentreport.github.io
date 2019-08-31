@@ -22,9 +22,12 @@
       img{
         margin: 0;
         padding: 0;
+        height: 150px;
+        widows: auto;
+        transition: all 0.05s;
       }
-      a:hover{
-        text-decoration: none !important;
+      img:not(.logo):hover{
+        height: 160px;
       }
     </style>
   </head>
@@ -39,7 +42,7 @@
         {% for post in site.tags.issue %}
           <li>
             <a href="{{ post.url }}">
-              <img height="150px" width="auto" src="{{post.coverimg}}">
+              <img height="150px" width="auto" src="{{post.img}}">
               <p style="font-weight: bold;">{{ post.issuetitle }}</p>
               <p style="">{{ post.issueno }}</p>
             </a>

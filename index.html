@@ -7,6 +7,29 @@
     <meta charset='utf-8'>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <link rel="stylesheet" type="text/css" media="screen" href="{{ '/assets/css/style.css?v=' | append: site.github.build_revision | relative_url }}">	
+    <style>
+      section div{
+        line-height: 1.2;
+      }
+      section div div{
+        text-align: center;
+      }
+      h1, p{
+        margin: 0;
+      }
+      img{
+        max-width: 80%;
+        height: auto;
+        max-height:40vh;
+        padding: 0;
+        margin: 3%;
+        transition: all 0.05s;
+      }
+        img:not(.logo):hover{
+          max-width: 85%;
+          max-height: 45vh;
+        }
+    </style>
   </head>
 
   <body>
@@ -15,13 +38,13 @@
     
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
-        <ul>
         {% for post in site.posts %}
-          <li>
-            <p><a href="{{ post.url }}">{{ post.title }}</a></p>
-          </li>
+          <div>
+            <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+            <p>{{ post.date | date: "%-d %B %Y"}}</p>
+            <div><a href="{{ post.url }}"><img width="auto" src="{{post.img}}"></a></div>
+          </div>
         {% endfor %}
-      </ul>
       </section>
     </div>
 
