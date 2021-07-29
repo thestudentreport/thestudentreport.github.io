@@ -58,7 +58,8 @@
             <a href="{{ post.url }}">
               <img name="{{ forloop.index }}" src="{{post.img}}">
               <p>Episode {{ post.epno }}</p>
-              <p style="font-weight: bold;">{{ post.guestname }}</p>
+              <p style="font-weight: bold;">{{ post.epname }}</p>
+              <p >{{ post.guestname }}</p>
             </a>
           </li>
         {% endfor %}
