@@ -10,6 +10,10 @@
     <description>
 	  Reflecting the environments of our education, we want to share different perspectives and ideas, to look to the world on a global level in order to learn about ourselves as individuals, in our role as students. 
     </description>
+	<itunes:owner>
+      <itunes:name>The Student Report</itunes:name>
+      <itunes:email>thestudentreport@pais.ac.th</itunes:email>
+    </itunes:owner>
     <itunes:image
       href="https://thestudentreport.com/icons/opengraph.png"
     />
