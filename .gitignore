@@ -1,5 +1,5 @@
 _site
 .DS_Store
 *bruh*
-Gemfile.lock
 _config.yml
+Gemfile.lock
