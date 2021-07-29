@@ -24,7 +24,7 @@
   <meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
 {% endif %}
 {% if page.img %}
-  <meta content="/img/{{ page.img }}" property="og:image">
+  <meta content="{{ page.img }}" property="og:image">
 {% else %}
   <meta content="/icons/opengraph.png" property="og:image">
 {% endif %}
