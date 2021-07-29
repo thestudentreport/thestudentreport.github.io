@@ -26,6 +26,9 @@
       <itunes:episode>{{ post.epno | xml_escape }}</itunes:episode>
       <title>#{{ post.epno | xml_escape }} - {{ post.epname | xml_escape }} - {{ post.guestname | xml_escape }}</title>
       <description>{{ post.title | xml_escape }}</description>
+	   <itunes:image
+        href="https://thestudentreport.com/podmp3/TSR{{ post.epno }}.png"
+      />
       <enclosure
         length="{{ post.eplength | xml_escape }}" 
         type="audio/mpeg"
