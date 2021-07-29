@@ -45,10 +45,11 @@
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
         {% for post in site.posts %}
-          <div>
+          <div class="indexdiv">
             <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
             <p>{{ post.date | date: "%-d %B %Y"}}</p>
             <div><a href="{{ post.url }}"><img width="auto" src="{{post.img}}"></a></div>
+            <hr class="indexhr">
           </div>
         {% endfor %}
       </section>
