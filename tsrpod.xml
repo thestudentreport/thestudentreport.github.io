@@ -9,7 +9,7 @@
     <itunes:author>The Student Report</itunes:author>
     <description>
 	  <![CDATA[Reflecting the environments of our education, we want to share different perspectives and ideas, to look to the world on a global level in order to learn about ourselves as individuals, in our role as students. 
-	  https://thestudentreport.com]]>
+	  <a href="https://thestudentreport.com">https://thestudentreport.com</a>]]>
     </description>
 	<itunes:owner>
       <itunes:name>The Student Report</itunes:name>
@@ -27,10 +27,10 @@
       <itunes:episode>{{ post.epno | xml_escape }}</itunes:episode>
       <title>#{{ post.epno | xml_escape }} - {{ post.epname | xml_escape }} - {{ post.guestname | xml_escape }}</title>
       <description><![CDATA[{{ post.title | xml_escape }}
-	  	Watch the video version of this episode on Youtube: {{ post.podcastlink | xml_escape }}
-		Instagram: @paisstudentreport
-		Website: https://thestudentreport.com
-		Youtube: https://www.youtube.com/channel/UCKbWcNMp1L5cGhhjh96dp1w]]>
+	  	Watch the video version of this episode on Youtube: <a href="{{ post.podcastlink | xml_escape }}">{{ post.podcastlink | xml_escape }}</a>
+		Website: <a href="https://thestudentreport.com">https://thestudentreport.com</a>
+		Instagram: <a href="https://www.instagram.com/paisstudentreport/">@paisstudentreport</a>
+		Youtube: <a href="https://www.youtube.com/channel/UCKbWcNMp1L5cGhhjh96dp1w">https://www.youtube.com/channel/UCKbWcNMp1L5cGhhjh96dp1w</a>]]>
 	  </description>
 	   <itunes:image
         href="https://thestudentreport.com/podmp3/TSR{{ post.epno }}.png"
