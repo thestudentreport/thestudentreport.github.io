@@ -1,0 +1,37 @@
+---
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:itunes="http://www.itunes.com/dtds/podcast-1.0.dtd" xmlns:content="http://purl.org/rss/1.0/modules/content/">
+  <channel>
+    <title>The Student Report Podcast</title>
+    <link>https://thestudentreport.com/</link>
+    <language>en-us</language>
+    <itunes:author>The Student Report</itunes:author>
+    <description>
+	  Reflecting the environments of our education, we want to share different perspectives and ideas, to look to the world on a global level in order to learn about ourselves as individuals, in our role as students. 
+    </description>
+    <itunes:image
+      href="https://thestudentreport.com/icons/opengraph.png"
+    />
+    <itunes:category text="Society &amp; Culture">
+    </itunes:category>
+    <itunes:explicit>false</itunes:explicit>
+	{% for post in site.categories.podcast %}
+    <item>
+      <itunes:episodeType>full</itunes:episodeType>
+      <itunes:episode>{{ post.epno | xml_escape }}</itunes:episode>
+      <title>#{{ post.epno | xml_escape }} - {{ post.epname | xml_escape }} - {{ post.guestname | xml_escape }}</title>
+      <description>{{ post.title | xml_escape }}</description>
+      <enclosure
+        length="{{ post.eplength | xml_escape }}" 
+        type="audio/mpeg"
+        url="https://thestudentreport.com/podmp3/TSR{{ post.epno }}.mp3"
+      />
+      <guid>https://thestudentreport.com/{{ post.epmp3 }}</guid>
+      <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
+      <itunes:duration>{{ post.epduration | xml_escape }}</itunes:duration>
+      <itunes:explicit>false</itunes:explicit>
+    </item>
+	{% endfor %}
+  </channel>
+</rss>
