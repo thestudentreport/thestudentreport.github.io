@@ -34,7 +34,7 @@
         type="audio/mpeg"
         url="https://thestudentreport.com/podmp3/TSR{{ post.epno }}.mp3"
       />
-      <guid>https://thestudentreport.com/{{ post.epmp3 }}</guid>
+      <guid>https://thestudentreport.com/podmp3/TSR{{ post.epno }}.mp3</guid>
       <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
       <itunes:duration>{{ post.epduration | xml_escape }}</itunes:duration>
       <itunes:explicit>false</itunes:explicit>
