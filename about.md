@@ -19,15 +19,15 @@ layout: post
 
 <ul style="color:white">
     <li><strong>Ludfee Poothong</strong> (<span class="e-mail" data-user="p.eefdul" data-website="ht.ca.siap.uts"></span>)</li>
-    <li><strong>Gina Andersen</strong> (<span class="e-mail" data-user="a.anig" data-website="ht.ca.siap.uts"></span>)</li>
+    <li><strong>Gina Andersen</strong> (<span class="e-mail" data-user="a.anig" data-website="ht.ca.siap.uts"></span>, Podcast Content)</li>
+    <li><strong>Iya Cabatay</strong> (<span class="e-mail" data-user="c.hayila" data-website="ht.ca.siap.uts"></span>, PR)</li>
+    <li><strong>Ayisha Housaiyin</strong> (<span class="e-mail" data-user="h.ahsiya" data-website="ht.ca.siap.uts"></span>, PR)</li>
 </ul>
 
 <details style="color:white">
 <summary><h3 style="display:inline;"><a class="hoverhide" style="text-decoration: underline; cursor:pointer">Previously Contributing Members</a></h3></summary>
 
 <ul>
-    <li><strong>Iya Cabatay</strong> (2019, PAIS)</li>
-    <li><strong>Ayisha Housaiyin</strong> (2019, PAIS)</li>
     <li><strong>Aiko Boonyoung</strong> (2019, PAIS)</li>
     <li><strong>Charmy Sukaramula</strong> (2019, PAIS)</li>
     <li><strong>Ja Netsuwan</strong> (2019, PAIS)</li>
