@@ -20,8 +20,9 @@ layout: post
 <ul style="color:white">
     <li><strong>Ludfee Poothong</strong> (<span class="e-mail" data-user="p.eefdul" data-website="ht.ca.siap.uts"></span>)</li>
     <li><strong>Gina Andersen</strong> (<span class="e-mail" data-user="a.anig" data-website="ht.ca.siap.uts"></span>, Podcast Content)</li>
-    <li><strong>Iya Cabatay</strong> (<span class="e-mail" data-user="c.hayila" data-website="ht.ca.siap.uts"></span>, PR)</li>
-    <li><strong>Ayisha Housaiyin</strong> (<span class="e-mail" data-user="h.ahsiya" data-website="ht.ca.siap.uts"></span>, PR)</li>
+    <li><strong>Faridah Khan</strong> (<span class="e-mail" data-user="k.hadiraf" data-website="ht.ca.siap.uts"></span>, Podcast Content)</li>
+    <li><strong>Iya Cabatay</strong> (<span class="e-mail" data-user="c.hayila" data-website="ht.ca.siap.uts"></span>, Media Outreach)</li>
+    <li><strong>Ayisha Housaiyin</strong> (<span class="e-mail" data-user="h.ahsiya" data-website="ht.ca.siap.uts"></span>, Media Outreach)</li>
 </ul>
 
 <details style="color:white">
