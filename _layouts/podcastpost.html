@@ -15,7 +15,15 @@
     
     <div id="main_content_wrap" class="outer">
       <section id="main_content" class="inner">
+        <div class="viddiv"><iframe class="podcastvid" src="{{page.podembed}}" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+        {% if page.epno < "5" %}
+        <h1>{{ page.epname}} - {{ page.guestname}}</h1>
+        {% else %}
+        <h1>{{page.podname}}</h1>
+        {% endif %}
+        <h3>The Student Report Podcast - Episode {{page.epno}}</h3>
         {{content}}
+        <h1><a href="{{page.podcastlink}}">-Watch the full video!-</a></h1>
       </section>
     </div>
 

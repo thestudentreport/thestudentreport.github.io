@@ -25,6 +25,7 @@
     <item>
       <itunes:episodeType>full</itunes:episodeType>
       <itunes:episode>{{ post.epno | xml_escape }}</itunes:episode>
+      {% if post.epno < "5" %}
       <title>#{{ post.epno | xml_escape }} - {{ post.epname | xml_escape }} - {{ post.guestname | xml_escape }}</title>
       <description><![CDATA[{{ post.title | xml_escape }}
 	  	Watch the video version of this episode on Youtube: <a href="{{ post.podcastlink | xml_escape }}">{{ post.podcastlink | xml_escape }}</a>
@@ -32,6 +33,16 @@
 		Instagram: <a href="https://www.instagram.com/paisstudentreport/">@paisstudentreport</a>
 		Youtube: <a href="https://www.youtube.com/channel/UCKbWcNMp1L5cGhhjh96dp1w">https://www.youtube.com/channel/UCKbWcNMp1L5cGhhjh96dp1w</a>]]>
 	  </description>
+      {% else %}
+      <title>#{{ post.epno | xml_escape }} - {{ post.podname | xml_escape }}</title>
+      <description><![CDATA[{{ post.content }}
+
+	  	Watch the video version of this episode on Youtube: <a href="{{ post.podcastlink | xml_escape }}">{{ post.podcastlink | xml_escape }}</a>
+		Website: <a href="https://thestudentreport.com">https://thestudentreport.com</a>
+		Instagram: <a href="https://www.instagram.com/paisstudentreport/">@paisstudentreport</a>
+		Youtube: <a href="https://www.youtube.com/channel/UCKbWcNMp1L5cGhhjh96dp1w">https://www.youtube.com/channel/UCKbWcNMp1L5cGhhjh96dp1w</a>]]>
+	  </description>
+      {% endif %}
 	   <itunes:image
         href="https://thestudentreport.com/podmp3/TSR{{ post.epno }}.png"
       />
